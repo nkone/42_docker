@@ -6,7 +6,7 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/12 14:03:24 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/12 14:06:46 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/21 16:46:07 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' ove
 
 # Old Docker client syntax:
 
-docker inspect --format '{{ .NetworkSettings.IPAddress }}' overlord
+# docker inspect --format '{{ .NetworkSettings.IPAddress }}' overlord
 
 # Source:
 # https://stackoverflow.com/questions/17157721/how-to-get-a-docker-containers-ip-address-from-the-host
