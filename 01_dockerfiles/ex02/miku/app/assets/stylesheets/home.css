@@ -1,0 +1,26 @@
+body {
+	background-color: black;
+}
+
+img.center {
+	display: block;
+	margin: auto;
+	width: 200px;
+}
+
+#miku-left {
+	height: 500px;
+	width: 500px;
+}
+
+#miku-right {
+	height: 500px;
+	width: 500px;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
+#miku-vid {
+	width: 400px;
+	height: 300px;
+}

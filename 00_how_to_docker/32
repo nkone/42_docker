@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    32                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/09/16 15:10:53 by phtruong          #+#    #+#              #
+#    Updated: 2019/09/16 15:11:40 by phtruong         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Force quit and delete all the containers (whatever their status), in one command.
+
+docker container rm -f $(docker container ls -a -q)

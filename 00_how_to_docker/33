@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    33                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/09/16 15:12:31 by phtruong          #+#    #+#              #
+#    Updated: 2019/09/16 17:50:36 by phtruong         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# Delete all the container images stored on the Char virtual machine, in one command
+# as well.
+docker rmi -f $(docker images -aq)
