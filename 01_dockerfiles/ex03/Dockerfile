@@ -6,7 +6,7 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/21 09:45:50 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/21 11:09:11 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/21 12:27:36 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,10 +14,12 @@ FROM debian
 
 RUN apt-get update -y && apt-get -y upgrade \
 	&& DEBIAN_FRONTEND=noninteractive apt-get -y install \
+	--no-install-recommends \
+	apt-utils \
 	curl \
 	sudo \
 	openssh-server \
-	ca-certificates 
+	ca-certificates
 
 RUN curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.deb.sh | sudo bash
 RUN apt-get install -y gitlab-ee
@@ -35,4 +37,12 @@ RUN apt-get install -y gitlab-ee
 # Here's line 112
 # GITLAB_OMNIBUS_CONFIG= /opt/gitlab/embedded/bin/runsvdir-start &
 
+# run container with --privileged
+# check with ip of docker machine and port 80 on browser
+# gitlab shell runs via port 22 (for ssh?)
+# gitlab rails run via 80 or 443
+# You can check if ssh is working by generating rsa key and add it git account.
+
 EXPOSE 443 80 22
+
+ENTRYPOINT (/opt/gitlab/embedded/bin/runsvdir-start &) && gitlab-ctl reconfigure && /bin/bash
