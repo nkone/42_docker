@@ -6,14 +6,14 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/18 15:36:13 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/21 09:21:17 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/21 11:46:23 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Debian image
 FROM debian:bullseye-slim
 
-ENV DEBIAN_FRONTEND noninteractive
+ARG DEBIAN_FRONTEND=noninteractive
 
 # Open gate 3000
 EXPOSE 3000
