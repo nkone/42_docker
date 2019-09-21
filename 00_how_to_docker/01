@@ -6,14 +6,15 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/10 19:14:25 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/16 13:48:45 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/21 16:33:00 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Create a virtual machine with docker-machine using the virtualbox driver, and
 # named Char.
+# Give it extra boost to run gitlab later on
 
 docker-machine create Char -d virtualbox \
---virtualbox-disk-size "4000" \
---virtualbox-cpu-count "2" \
---virtualbox-memory "1024";
+--virtualbox-disk-size "10000" \
+--virtualbox-cpu-count "4" \
+--virtualbox-memory "2048";
