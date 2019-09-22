@@ -6,13 +6,15 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/16 14:46:14 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/16 14:55:03 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/21 18:31:04 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Launch a 42school/engineering-bay service in two replicas and make sure that
 # the service works properly (see the documentation provided at hub.docker.com).
 # This service will be named engineering-bay and will be on the overmind network
+# you'd only need two engineering-bays if you're running a bio build with 1-1 upgrade
+# 26 checked
 
 docker pull 42school/engineering-bay;
 docker service create \
