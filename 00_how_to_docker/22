@@ -6,12 +6,13 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/16 14:07:24 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/16 14:16:55 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/21 18:10:17 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Turn Aiur into a slave of the local swarm in which Char is leader (the command to
 # take control of Aiur is not requested).
+# 22 checked
 
 docker-machine ssh Aiur \
 "docker swarm join --token $(docker swarm join-token worker -q) $(docker-machine ip Char):2377";
