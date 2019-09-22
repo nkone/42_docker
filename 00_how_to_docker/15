@@ -6,7 +6,7 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/12 20:34:50 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/13 13:54:12 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/21 17:12:06 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 # its 80 port should be bound to the 8081 port of the virtual machine and it should
 # be able to explore the database stored in the spawning-pool container.
 
-docker pull phpmyadmin/phpmyadmin
+docker pull phpmyadmin/phpmyadmin;
 docker run -d \
 --name roach-warden \
 --link spawning-pool \
