@@ -6,7 +6,7 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/16 14:26:09 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/21 18:13:42 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/21 18:17:02 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@
 # 24 checked
 
 docker pull rabbitmq;
-docker run -d \
+docker service create \
 --hostname rabbit-lord \
 --name orbital-command \
 --network overmind \
