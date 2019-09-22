@@ -6,12 +6,13 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/16 13:13:05 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/16 14:04:45 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/21 17:47:36 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Create a local swarm, the Char virtual machine should be its manager.
 
 # docker swarm init --advertise-addr <MANAGER-IP>
+# 20 checked
 
 docker-machine ssh Char "docker swarm init --advertise-addr $(docker-machine ip Char)";
