@@ -6,10 +6,12 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/16 14:57:16 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/16 14:57:41 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/21 18:32:14 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Get the real-time logs of one the tasks of the engineering-bay service.
+# Yeah you'd get zerg rush if you're greedy for upgrades lol
+# checked 27
 
 docker service logs -f engineering-bay
