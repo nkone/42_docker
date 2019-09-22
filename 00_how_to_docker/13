@@ -6,11 +6,11 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/12 15:14:04 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/12 15:16:42 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/21 17:09:47 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Print the environment variables of the spawning-pool container in one command,
-to be sure that you have configured your container properly.
+# to be sure that you have configured your container properly.
 
 docker exec spawning-pool printenv
