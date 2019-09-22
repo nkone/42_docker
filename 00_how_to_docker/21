@@ -6,14 +6,12 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/16 13:36:26 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/16 13:52:03 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/21 18:06:47 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Create another virtual machine with docker-machine using the virtualbox driver,
 # and name it Aiur
+# Give Aiur default settings cause protoss is balanced :P
 
-docker-machine create Aiur -d virtualbox \ 
---virtualbox-disk-size "1000" \
---virtualbox-cpu-count "2" \
---virtualbox-memory "420";
+docker-machine create -d virtualbox Aiur
