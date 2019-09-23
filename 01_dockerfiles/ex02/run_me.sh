@@ -1,23 +1,16 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    Dockerfile                                         :+:      :+:    :+:    #
+#    run_me.sh                                          :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2019/09/18 20:28:12 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/18 20:47:37 by phtruong         ###   ########.fr        #
+#    Created: 2019/09/22 19:07:25 by phtruong          #+#    #+#              #
+#    Updated: 2019/09/22 19:12:28 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-FROM ruby:2.3.7
 
-ONBUILD COPY ./app/ /opt/app/
-ONBUILD WORKDIR /opt/app
+#!/bin/sh
 
-RUN apt-get update \
-	&& apt-get install -y rails
-RUN gem install bundler -v 2.0.1
-
-ONBUILD RUN bundler install
-ONBUILD RUN rake db:migrate
-ONBUILD RUN rake db:seed
+docker build -t ruby_rails .
+docker run -it --name miku --rm -p 3000:3000 ruby_rails
