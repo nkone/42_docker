@@ -6,11 +6,11 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/16 15:19:18 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/16 15:20:25 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/22 18:49:40 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Delete the Aiur virtual machine without using rm -rf
+# 34 checked
 
-docker-machine stop Aiur;
 docker-machine rm Aiur -y;
