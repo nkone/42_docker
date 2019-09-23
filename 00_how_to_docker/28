@@ -6,7 +6,7 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/16 14:59:11 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/16 15:01:48 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/22 18:19:34 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,7 @@
 # and make sure that the service works properly (see the documentation provided
 # at hub.docker.com). This service will be named... marines and will be on the
 # overmind network.
+# 28 checked
 
 docker pull 42school/marine-squad;
 docker service create \
