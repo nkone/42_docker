@@ -6,11 +6,11 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/16 19:10:07 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/16 19:10:49 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/22 18:52:04 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#i!/bin/sh
+#!/bin/sh
 
 docker rmi -f $(docker images -aq)
 
