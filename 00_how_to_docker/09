@@ -6,7 +6,7 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/12 14:23:30 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/21 16:55:12 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/23 15:13:04 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,9 @@
 # container are updated). For this exercise, you should only specify the commands
 # to be run directly in the container.
 
-docker pull debian;
-docker run -it --rm --name debian debian /bin/sh
+# docker pull debian;
+# docker run -it --rm --name debian debian /bin/sh
 
-# apt-get update; apt-get upgrade -y; apt-get install -y build-essential vim --no-install-recommends
+apt-get update; 
+apt-get upgrade -y;
+apt-get install -y build-essential vim git --no-install-recommends
