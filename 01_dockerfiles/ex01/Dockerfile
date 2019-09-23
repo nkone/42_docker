@@ -6,7 +6,7 @@
 #    By: phtruong <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/17 19:44:13 by phtruong          #+#    #+#              #
-#    Updated: 2019/09/17 20:53:36 by phtruong         ###   ########.fr        #
+#    Updated: 2019/09/22 18:55:38 by phtruong         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ FROM debian
 EXPOSE 9987/udp 10011 30033
 
 # Upgade debian
-RUN apt-get update && apt-get upgrade && apt-get install wget bzip2 w3m -y
+RUN apt-get update && apt-get upgrade -y && apt-get install wget bzip2 w3m -y
 
 # Get latest version of team speak
 
